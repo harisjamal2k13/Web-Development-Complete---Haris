@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Page</title>
+    <link rel="stylesheet" href="imageUpload.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <a href="../home.html" class="home-link">Home</a>
+        <b><p id="logID"></p></b>
+        <h2>Upload an Image</h2>
+        <input type="file" accept="image/*" class="imageInput" id="imageInput">
+        <button id="uploadImage">Show Image</button>
+
+        <div class="image-preview">
+            <h3>Image Preview</h3>
+            <img src="" id="uploadedImage" alt="Uploaded Image">
+        </div>
+    </div>
+
+    <!-- Your custom JavaScript -->
+    <script type="module" src="imageUpload.js"></script>
+</body>
+</html>

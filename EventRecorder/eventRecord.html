@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Recorder Page</title>
+    <link rel="stylesheet" href="eventRecord.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../home.html" class="home-link">Home</a>
+        <b><p class="logID" id="logID"></p></b>
+        <h1>Event Planner App</h1>
+        <form id="eventForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" required>
+            <label for="eventDate">Event Date:</label>  
+            <input type="date" id="eventDate" required>
+            <button type="submit">Create Event</button>
+        </form>
+        <ul id="eventList"></ul>
+    </div>
+    <script type="module" src="eventRecord.js"></script>
+</body>
+</html>

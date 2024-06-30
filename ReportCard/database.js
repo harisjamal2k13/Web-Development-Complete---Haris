@@ -1,0 +1,110 @@
+const studentData = [
+  {
+        rollNumber:'1',
+        name:'JohnDoe',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:85},
+          {serialNumber:2,name:'Science',marks:78},
+          {serialNumber:3,name:'English',marks:92}
+        ]
+      },
+      {
+        rollNumber:'2',
+        name:'JaneSmith',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:80},
+          {serialNumber:2,name:'Science',marks:85},
+          {serialNumber:3,name:'English',marks:88}
+        ]
+      },
+      {
+        rollNumber:'3',
+        name:'Haris Jamal',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:85},
+          {serialNumber:2,name:'Science',marks:78},
+          {serialNumber:3,name:'English',marks:92}
+        ]
+      },
+      {
+        rollNumber:'4',
+        name:'Joe Roots',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:80},
+          {serialNumber:2,name:'Science',marks:85},
+          {serialNumber:3,name:'English',marks:88}
+        ]
+      },
+      {
+        rollNumber:'5',
+        name:'Atif Khan',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:85},
+          {serialNumber:2,name:'Science',marks:78},
+          {serialNumber:3,name:'English',marks:92}
+        ]
+      },
+      {
+        rollNumber:'6',
+        name:'Sania Mirza',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:80},
+          {serialNumber:2,name:'Science',marks:85},
+          {serialNumber:3,name:'English',marks:88}
+        ]
+      },
+      {
+        rollNumber:'7',
+        name:'Sana Khan',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:85},
+          {serialNumber:2,name:'Science',marks:78},
+          {serialNumber:3,name:'English',marks:92}
+        ]
+      },
+      {
+        rollNumber:'8',
+        name:'Bumrah',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:80},
+          {serialNumber:2,name:'Science',marks:85},
+          {serialNumber:3,name:'English',marks:88}
+        ]
+      },
+      {
+        rollNumber:'9',
+        name:'Faiza Batool',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:55},
+          {serialNumber:2,name:'Science',marks:58},
+          {serialNumber:3,name:'English',marks:52}
+        ]
+      },
+      {
+        rollNumber:'10',
+        name:'Virat Kohli',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:60},
+          {serialNumber:2,name:'Science',marks:65},
+          {serialNumber:3,name:'English',marks:58}
+        ]
+      },
+      {
+        rollNumber:'11',
+        name:'Adnan Akmal',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:44},
+          {serialNumber:2,name:'Science',marks:45},
+          {serialNumber:3,name:'English',marks:42}
+        ]
+      },
+      {
+        rollNumber:'12',
+        name:'David Miller',
+        subjects:[
+          {serialNumber:1,name:'Mathematics',marks:60},
+          {serialNumber:2,name:'Science',marks:55},
+          {serialNumber:3,name:'English',marks:48}
+        ]
+      }
+];

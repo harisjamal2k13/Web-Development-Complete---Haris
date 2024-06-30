@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+text-align: center;
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 800px;
+margin-top: 20px;
+}
+h1{
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+}
+/* Body styles */
+button:hover {
+    background-color: #45a049;
+}
+.formBox{
+    margin-top: 2%;
+}
+.logout {
+    padding: 8px 20px;
+    background-color: #e715dd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+a:link { 
+    text-decoration: none; 
+  } 
+#leftbox {
+    float: left;
+    background: #ffffff;
+    width: 20%;
+    height: 35px;
+    font-size: large;
+    text-align: right;
+    font-weight: bold;
+    color: rgb(100, 6, 38);
+    padding-right: 5px;
+}
+.logID{
+    font-weight: bold;
+    color: green;
+    text-align: left;
+}
+#rightbox {
+    float: right;
+    /* margin-left: 2px; */
+    background: rgb(249, 249, 250);
+    /* width: 13%; */
+    height: 35px;
+}
+
+/* .numbered-list {
+    counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+} */
+/* .numbered-list li {
+    counter-increment: item;
+    content: counter(item) ".";
+    margin-bottom: 5px;
+    font-weight: bold;
+} */
+

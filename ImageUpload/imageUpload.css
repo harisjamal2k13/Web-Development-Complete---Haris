@@ -1,0 +1,77 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.home-link {
+    float: right;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.imageInput {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #30f06a;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #18cc4e;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image-preview {
+    margin-top: 20px;
+}
+
+.image-preview h3 {
+    font-size: 18px;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Page</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../home.html"> <button class="home">Home</button></a>
+        <b><p class="logID" id="logID"></p></b>
+        <h1>Todo App</h1>
+        <!-- <form id="todo-form">
+            <input type="text" class="inpt"  id="todo-input" placeholder="Enter task...">
+            <button type="submit">Add Task</button>
+            <button class="delete-all-btn" id="delete-all-btn">Delete All</button>
+        </form> -->
+        <form id="todo-form">
+        <div class="input-group inpt">
+            <input type="text" class="form-control"  id="todo-input"  placeholder="Enter Task">
+            <button class="addTask" type="submit">Add Task</button>
+            <button class="deleteAll" id="delete-all-btn" type="button">Delete All</button>
+        </div><br>
+    </form>
+        <ul id="todo-list" ></ul>
+
+
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <script type="module" src="todo.js"></script>
+
+</body>
+</html>

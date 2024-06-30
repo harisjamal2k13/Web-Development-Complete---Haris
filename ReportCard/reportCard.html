@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Card Page</title>
+    <link rel="stylesheet" href="reportCard.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../home.html" class="home-link">Home</a>
+        <b><p id="logID"></p></b>
+        <h2>Student Progress Report</h2>
+        <!-- <label for="rollNumber">Enter Roll Number:</label><br> -->
+        <input type="text" id="rollNumber" class="rollNumber" placeholder="Enter roll number e.g: 1,2,3,4,5,6,7 or 8 without space">
+        <button onclick="showReport()">Show Report</button>
+
+        <div id="studentInfo">
+            <!-- Placeholder for student info -->
+        </div>
+
+        <table id="reportTable">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody id="reportBody">
+                <!-- Table rows will be added here dynamically -->
+            </tbody>
+        </table>
+        
+        <!-- Placeholder for percentage and grade -->
+        <div id="percentageAndGrade">
+            <p><span id="percentage"></span></p>
+            <p><span id="grade"></span></p>
+        </div>
+    </div>
+
+    <script src="reportCard.js"></script>
+    <script src="database.js"></script>
+</body>
+</html>
