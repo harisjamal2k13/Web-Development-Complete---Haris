@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+  <title>Firebase Authentication</title>
+<!-- Firebase SDK -->
+<script type="module" src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js"></script>
+<script type="module"    src="https://www.gstatic.com/firebasejs/10.12.3/firebase-storage.js"></script>
+
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+  <b><p class="logID" id="logID"></p></b>
+  <a href="../home.html" class="home-link">Home</a>
+  <h1>Account Signup and Login with Profile Image</h1>
+  <!-- Signup and Login Forms -->
+  <div id="signup-form">
+    <h2>Signup</h2>
+    <input type="email" id="signup-email" placeholder="Email">
+    <input type="password" id="signup-password" placeholder="Password">
+    <input type="file" id="signup-image">
+    <button id="signup">Signup</button>
+  </div>
+  <div id="login-form">
+    <h2>Login</h2>
+    <input type="email" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Password">
+    <button id="login">Login</button>
+  </div>
+  <!-- Display user information -->
+  <div id="user-info">
+    <h2>User Profile</h2>
+    <!-- <img id="user-image" src="" alt="User Image"> -->
+    <div id="user-image-container">
+        <img id="user-image" src="" alt="User Image">
+      </div>
+    <p>Email: <span  id="user-email"></span></p>
+    <button id="logout">Logout</button>
+  </div>
+
+  <!-- Firebase scripts for authentication and firestore -->
+  <script type="module" src="auth.js"></script>
+</body>
+</html>

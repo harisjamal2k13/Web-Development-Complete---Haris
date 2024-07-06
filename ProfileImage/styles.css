@@ -1,0 +1,131 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #0a0000; /* Beautiful background color */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logID {
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    text-align: center;
+    background-color: #3d57eb;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .home-link {
+    float: right;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  /* Form styling */
+  #signup-form,
+  #login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  #signup-form h2,
+  #login-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="file"],
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* User info section */
+  #user-info {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    display: none; /* Initially hidden */
+  }
+  
+  #user-info h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #user-image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+  }
+  
+  #user-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  #user-info p {
+    text-align: center;
+  }
+  
+  #logout {
+    display: block;
+    margin: 0 auto;
+    background-color: #f44336;
+  }
+  
+  #logout:hover {
+    background-color: #d32f2f;
+  }
+  
+  p{
+    background-color: black;
+    color: white;
+    width: 30%;
+    margin: 2%  35%;
+    padding: 5px 10px;
+    align-items: center;
+  }
