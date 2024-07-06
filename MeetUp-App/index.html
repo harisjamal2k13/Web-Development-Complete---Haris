@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meetup App</title>
+  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/boot.css">  
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCxdnyyN6s8gzISIhmEU9LpXLzeXh1cjHM",
+    authDomain: "fb-june2024.firebaseapp.com",
+    databaseURL: "https://fb-june2024-default-rtdb.firebaseio.com",
+    projectId: "fb-june2024",
+    storageBucket: "fb-june2024.appspot.com",
+    messagingSenderId: "160080813553",
+    appId: "1:160080813553:web:f7557c64b1e35a78267850",
+    measurementId: "G-8KXWKMW1CT"
+  };
+    firebase.initializeApp(config);
+     function changeHashOnLoad() {
+      window.location.href += '#';
+      setTimeout('changeHashAgain()', '50');
+    }
+
+    function changeHashAgain() {
+      window.location.href += '1';
+    }
+
+    var storedHash = window.location.hash;
+    window.setInterval(function () {
+      if (window.location.hash != storedHash) {
+        window.location.hash = storedHash;
+      }
+    }, 50);
+    window.onload = changeHashOnLoad();
+  </script>
+</head>
+
+<body class="signinback" onload="myFunction()" id="signinbody">
+
+  <nav class="navbar navbar-expand-lg navbar-light customnavbgcolor">
+    <a class="navbar-brand">Meetup App</a>
+    <a href="../home.html" class="home-link">Home</a>
+
+  </nav>
+  <!--<div id="loader"></div>  -->
+
+<div class="container" id="myDiv">
+      <form class="form-signin">
+        <img src="images/media.png"  alt="media" class="logoback animate-bottom  rounded-circle">
+      <button type="button" class="btn btn-outline-light signinupbutton animate-left" data-toggle="modal" data-target="#signinmodal">
+  SignIn
+</button>
+
+        <button type="button" class="btn btn-outline-light custombtn paddingtopbtn signinupbutton animate-right" data-toggle="modal" data-target="#signupmodal">
+SignUp
+</button>
+      </form>
+
+    </div>
+
+
+<!--
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto positionbtn">
+        <button type="button" class="btn btn-primary signinupbutton" data-toggle="modal" data-target="#signinmodal">
+  SignIn
+</button>
+        <button type="button" class="btn btn-primary custombtn paddingtopbtn signinupbutton" data-toggle="modal" data-target="#signupmodal">
+SignUp
+</button>
+      </div>
+    </div>
+  </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="customclose">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+
+         
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="name" id="username" class="form-control" placeholder="Select Username">
+            </div>
+
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" id="email" class="form-control" placeholder="Select Email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" id="password" class="form-control" placeholder="Select Password(min 6 char)">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="submit()">SignUp</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="modal fade" id="signinmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SignIn</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="customclose">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+
+          <form id="stop">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="inputemail" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="inputpassword" placeholder="Password">
+            </div>
+
+            <button type="submit" class="btn btn-primary">SignIn</button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="signupsuccessmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content ">
+          <div class="modal-header custommodalcontent">
+            <h5 class="modal-title" id="exampleModalLabel">SignUp Successfully</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="customclose">&times;</span>
+          </button>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+</body>
+<script src="css/jquery.js"></script>
+<script src="css/popper.js"></script>
+<script src="css/boot.js"></script>
+
+<script src="js/main.js"></script>
+
+</html>
