@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUIZ APPLICATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="../home.html" class="home-link">Home</a>
+        <b><p id="logID"></p></b>
+    <div class="main-container" id="startquiz">
+        <h1> Welcome to Quiz application </h1>
+        <h2>Quiz name: Basic Javacript Test 1</h2>
+        <h2>No of atempts allowed: 1</h2>
+        <h2>Time duration: 10 mins</h2>
+    
+        <button id="start" onclick="startQuiz()" onmouseover="changeBtn()" onmouseout="reverseBtn()"> START QUIZ</button>
+    </div>
+
+
+    <div class="main-container-quiz" id="quiz" style="display:none">
+        <div id="timer" style="text-align: right; display:none"> </div>
+
+
+        <h1 class="Que"> QUESTIONS</h1>
+        <!-- <p>Q1: whats your institute name?</p> -->
+        <p id="ques"></p>
+        <input id="opt1" name="opt" value='a' type="radio" onclick="enableNextBtn()"><label id="text1"></label><br /> <br
+        />
+        <input id="opt2" name="opt" value='b' type="radio" onclick="enableNextBtn()"><label id="text2"></label><br /><br
+        />
+        <input id="opt3" name="opt" value='c' type="radio" onclick="enableNextBtn()"><label id="text3"></label><br /><br
+        />
+        <input id="opt4" name="opt" value='d' type="radio" onclick="enableNextBtn()"><label id="text4"></label><br /><br
+        />
+        <button id="next" onclick="next()" disabled onmouseover="changeBtn()" onmouseout="reverseBtn()">NEXT</button>
+    </div>
+
+    <div id="result" style="display:none">
+        <h1 id="remarks"></h1>
+        <h1 id="ans"></h1>
+        <h1 id="score"></h1>
+    </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
