@@ -1,0 +1,95 @@
+/*!
+ * Start Bootstrap - One Page Wonder (https://startbootstrap.com/template-overviews/one-page-wonder)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
+ */
+
+$nav-bg: #44b346;
+$danger: #d9534f;
+$success: #5cb85c;
+ body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.navbar{
+  background-color: $nav-bg;
+  font-size: 18px;
+  .nav-item:hover{
+    opacity: 0.8;
+  }
+  border-bottom: 3px #FFFFFF solid;  
+}
+
+.nav-index{
+  border-bottom: none;
+}
+.links{
+  a{
+    color: #FFFFFF;
+  }
+}
+
+
+header.masthead {
+  background: url('../img/background.jpeg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header.masthead>.overlay {
+  padding: 5rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 992px) {
+  header.masthead>.overlay {
+    padding: 10rem 0;
+  }
+}
+.modal-content{
+  border-radius: 20px;
+}
+
+#choose{
+  .fa{
+    font-size: 100px;
+  }
+
+  #chooseAccepter{
+    .card{
+
+      background-color: $success;
+    }
+  }
+  #chooseDonor{
+    .card{
+      background-color: $danger;            
+    }
+
+  }
+  .card{
+    color: #E4DCDC; 
+    :hover{
+     color: #FFFFFF;
+    }
+  }  
+
+}
+
+// DONOR 
+#donorForm{
+  .card-footer{
+  a{
+    color: #FFFFFF;
+  }
+  }
+}

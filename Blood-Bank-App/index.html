@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/gif" href="./img/drop.png" />
+  <title>LifeLine - The Blood Application</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Custom styles for this template -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCxdnyyN6s8gzISIhmEU9LpXLzeXh1cjHM",
+    authDomain: "fb-june2024.firebaseapp.com",
+    databaseURL: "https://fb-june2024-default-rtdb.firebaseio.com",
+    projectId: "fb-june2024",
+    storageBucket: "fb-june2024.appspot.com",
+    messagingSenderId: "160080813553",
+    appId: "1:160080813553:web:f7557c64b1e35a78267850",
+    measurementId: "G-8KXWKMW1CT"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar nav-index navbar-expand-lg navbar-dark navbar-inverse bg-success fixed-top  bag-top">
+    <div class="container align-items-center">
+      <a class="navbar-brand" href="#"><img src="img/drop.png"></img> LifeLine <span class="d-none d-md-inline">- The Blood Application</span></a>
+      <b><p class="logID text-center" id="logID"></p></b>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation">
+      
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#" data-target="#userModal" data-toggle="modal">Login / Register</a>
+            <li class="nav-item">
+              <a href="../home.html" class="nav-link home-link">Home</a>
+            </li>          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="overlay">
+      <div class="container">
+        <h1 class="bg">LifeLine - The Blood App </h1>
+        <h2 class="bg1">Find a donor, or become one</h2>
+
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="./img/help.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 order-1">
+          <div class="p-5">
+            <h2 class="display-3">Find A Donar</h2>
+            <p class="pt-4 lead">Need a regular supply of blood but having trouble finding donars? Find regular donars from the ease and comfort
+              of your own home with the click of a button.</p>
+            <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#userModal">Start Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="p-5">
+            <img class="" src="./img/baby2.jpg" alt="baby">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-5">
+            <h2 class="display-4">Become A Donor</h2>
+            <p class="py-4 lead">Become a donor, and help save a life. Every little bit counts and your donation may be the difference between
+              someones life or death.</p>
+            <button class="btn btn-lg btn-danger" data-toggle="modal" data-target="#userModal">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <div class="text-center text-white links">Made By Haris Jamal</div>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <div class="modal fade" id="userModal">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white bag-top">
+          <h5 class="modal-title" id="userModelLabel">Login / Register</h5>
+          <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#login" role="tab" data-toggle="tab">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#registar" role="tab" data-toggle="tab">Register</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content py-3">
+
+            <div role="tabpanel" class="tab-pane active " id="login">
+              <form>
+                <div class="form-group">
+                  <label for="email" class="form-control-label">Email</label>
+                  <input type="email" id="userLoginEmail" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="password" class="form-control-label">Password</label>
+                  <input type="password" id="userLoginPassword"  class="form-control">
+                </div>
+              </form>
+              <div class="modal-footer">
+                <button class="btn btn-success" onclick="login()">Login</button>
+              </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="registar">
+              <form>
+                <div class="form-group">
+                  <label for="name" class="form-control-label">Name</label>
+                  <input type="text" id="signupName" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-control-label">Email</label>
+                  <input type="email" id="signupEmail" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="password" class="form-control-label">Password</label>
+                  <input type="password" id="signupPassword" class="form-control">
+                </div>
+              </form>
+              <div class="modal-footer">
+                <button class="btn btn-success" onclick="signUp()">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/userCheckFunction.js"></script>
+  <script src="js/index.js"></script>  
+
+</body>
+
+</html>

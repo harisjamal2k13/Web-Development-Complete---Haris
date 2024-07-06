@@ -1,0 +1,107 @@
+/*!
+ * Start Bootstrap - One Page Wonder (https://startbootstrap.com/template-overviews/one-page-wonder)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
+ */
+ .bag-top{
+   background-color: #5cb85c; 
+ }
+ .bag-top{
+   background-color: #d11f1f !important;
+
+ }
+body {
+  padding-top: 54px; }
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px; } }
+
+.navbar {
+  background-color: #d11f1f;
+  font-size: 18px;
+  border-bottom: 3px #FFFFFF solid; }
+  .navbar .nav-item:hover {
+    opacity: 0.8; }
+
+.nav-index {
+  border-bottom: none; }
+
+.links a {
+  color: #FFFFFF; }
+
+header.masthead {
+  background: url("../img/background.jpeg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .bg{
+    color: greenyellow;
+    font-size:500%;
+  }
+  .bg1{
+    color: greenyellow;
+    font-size: 300%;
+  }
+
+header.masthead > .overlay {
+  padding: 5rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); }
+
+@media (min-width: 992px) {
+  header.masthead > .overlay {
+    padding: 10rem 0; } }
+
+.modal-content {
+  border-radius: 20px; }
+
+#choose .fa {
+  font-size: 100px; }
+
+#choose #chooseAccepter .card {
+  background-color: #d11f1f; }
+
+#choose #chooseDonor .card {
+  background-color: #d9534f; }
+
+#choose .card {
+  color: #E4DCDC; }
+  #choose .card :hover {
+    color: #FFFFFF; }
+
+#donorForm .card-footer a {
+  color: #FFFFFF; }
+.bag-gre{
+  background-color: #5cb85c;
+}
+.logID {
+  text-align: center; /* Center align the text */
+  font-size: 18px; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+  padding: 10px 0; /* Add padding for spacing */
+  color: greenyellow;
+}
+
+td{
+  text-align: center;
+}
+.home-link {
+ /* Ensure it's visible against the navbar background */
+ background-color: #007bff;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-left: auto; /* Pushes the Home link to the right */
+ padding: 0.5rem 1rem; /* Adjust padding as needed */
+ text-decoration: none; /* Remove underline */
+}
+
+@media (max-width: 768px) {
+  .home-link {
+    margin-left: 0; /* Adjust margin for smaller screens */
+    margin-right: 10px; /* Add margin on the right for spacing */
+  }
+}
